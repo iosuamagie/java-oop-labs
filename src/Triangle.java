@@ -7,7 +7,7 @@ public class Triangle extends Form {
         this.base = 0;
     }
 
-    public Triangle(float height, float base , String color) {
+    public Triangle(float height, float base , String color ) {
         super(color);
         this.height = height;
         this.base = base;
