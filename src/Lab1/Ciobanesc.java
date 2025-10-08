@@ -11,4 +11,9 @@ public class Ciobanesc extends Caine{
     public void mananca() {
         System.out.println("ciobanescul mananca");
     }
+
+    @Override
+    public void doarme() {
+        System.out.println("ciobanescul doarme");
+    }
 }
