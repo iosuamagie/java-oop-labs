@@ -8,7 +8,7 @@ public abstract class Form {
     }
 
     public Form(String color) {
-        color=color;
+        this.color = color;
         counter++;
     }
 
@@ -20,6 +20,10 @@ public abstract class Form {
         StringBuilder sb= new StringBuilder();
         sb.append("This form has the color:").append(color);
         return sb.toString();
+    }
+
+    public String getColor() {
+        return color;
     }
 
     public static int getCounter() {

@@ -24,11 +24,17 @@ public class Triangle extends Form {
 
     }
 
-    public boolean equals() {
-        if (height == base) {
-            return true;
-        } else{
-            return false;
-        }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Triangle other)) return false;
+        return height == other.height
+                && base == other.base
+                && java.util.Objects.equals(getColor(), other.getColor());
+    }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(height, base, getColor());
     }
 }
