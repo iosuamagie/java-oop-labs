@@ -1,0 +1,34 @@
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# Build output
+out/
+target/
+bin/
+build/
+*.class
+
+# Files the labs generate when you run them
+08-excel-apache-poi/workbook.xlsx
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets and big files (never commit these)
+.env
+.env.*
+*.key
+*.pem
+secrets/
+data/
+*.wav
+*.zip
+node_modules/
+__pycache__/
+.venv/
